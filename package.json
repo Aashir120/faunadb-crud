@@ -16,6 +16,9 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.26.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
