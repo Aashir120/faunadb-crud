@@ -27,15 +27,15 @@ export default function LinkCard({ link, refreshLinks }) {
         }
     };
     return (
-        <div className="card mb-3">
+        <div className="card mb-3" style={{textTransform:'capitalize'}}>
             <div className="card-header">{link.name}</div>
             <div className="card-body">
-                <a href={link.url}>{link.url}</a>
+                <h6 style={{fontSize:'30px'}} >{link.url }</h6>
                 <p>{link.description}</p>
             </div>
             <div className="card-footer">
                 <button className="btn btn-warning mr-2" onClick={archiveLink}>
-                    Archive
+                    Done
                 </button>
                 <button className="btn btn-danger" onClick={deleteLink}>
                     Delete

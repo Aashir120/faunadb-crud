@@ -3,7 +3,7 @@ import LinkCard from './LinkCard';
 export default function LinkList({ links, refreshLinks }) {
     return (
         <div>
-            <h2 className="my-4">Links</h2>
+            <h2 className="my-4">Pending</h2>
             {links &&
                 links
                     .filter((link) => !link.archived)
@@ -14,7 +14,7 @@ export default function LinkList({ links, refreshLinks }) {
                             refreshLinks={refreshLinks}
                         />
                     ))}
-            <h2 className="my-4">Archived</h2>
+            <h2 className="my-4">Completed</h2>
             {links &&
                 links
                     .filter((link) => link.archived)
